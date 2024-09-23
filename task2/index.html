@@ -1,115 +1,155 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
-  <title>Task 1 Anna Suprun 21/2</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Р—Р°РґР°РЅРёРµ 2</title>
 </head>
+
 <body>
-  <ul>
-    <li>
-      <a href="http://kubsu.ru/" id="КУБГУ">Абсолютная гиперссылка на главную страницу сайта kubsu.ru</a
+  <header>
+    <nav id="nav">
+      <a href="https://t.me/groteskiy" class="nav-button">Telegram</a>
+      <a href="https://www.instagram.com/perselfstudio/" class="nav-button">Inst</a>
+      <a href="https://vk.com/yeeahboy" class="nav-button">VK</a>
+    </nav>
+    <img src="https://github.com/kabakov52/kabakov52.github.io/blob/main/task2/Perself.png?raw=true" alt="Perself logo" class="logo">
+    <div id="top">Perself Studio</div>
+  </header>
+  <div class="content-container">
+    <div class="title">РЎРїРёСЃРѕРє СЃСЃС‹Р»РѕРє</div>
+    <ul>
+      <li>
+        <a href="http://kubsu.ru/" id="Р’РЈР—" class="link">РђР±СЃРѕР»СЋС‚РЅР°СЏ РіРёРїРµСЂСЃСЃС‹Р»РєР° РЅР° РіР»Р°РІРЅСѓСЋ СЃС‚СЂР°РЅРёС†Сѓ СЃР°Р№С‚Р° kubsu.ru</a
         >
       </li>
       <li>
-        <a href="https://www.kubsu.ru/index.php"
-          >Абсолютная на главную сайта kubsu.ru в протоколе https</a
+        <a href="https://kubsu.ru/" class="link"
+          >РђР±СЃРѕР»СЋС‚РЅР°СЏ РЅР° РіР»Р°РІРЅСѓСЋ СЃР°Р№С‚Р° kubsu.ru РІ РїСЂРѕС‚РѕРєРѕР»Рµ https</a
         >
       </li>
       <li>
-        <a href="https://en.wikipedia.org/wiki/Kitten"
+        <a href="http://kubsu.ru/" 
           ><img
-            src="https://i.pinimg.com/736x/08/3c/df/083cdf46f5fc5cc44b41112cc2a9d75b.jpg"
-            height="10%" width="10%"
-            alt="kitten"
+            src="https://openedu.kubsu.ru/pluginfile.php/1/core_admin/logocompact/300x300/1681820896/%D0%9A%D1%83%D0%B1%D0%93%D0%A32.png"
+            alt="Р›РѕРіРѕС‚РёРї РљСѓР±Р“Сѓ"
         ></a>
-    </li>
-    <li><a href="index.html">Сокращенная ссылка на внутреннюю странцу</a></li>
-    <li><a href="/">Сокращенная ссылка на главную страницу</a></li>
-    <li><a href="#ВУЗ">Ссылка на фрагмент текущей страницы</a></li>
-    <li><a href="https://mysite.com/?p1=a1&p2=a2&p3=a3">Ссылка с тремя параметрами в URL</a></li>
-    <li><a href="http://www.site.ru/?id=123456789">Ссылка с параметром id в URL</a></li>
-    <li>
-      <a href="./index.html">Относительная ссылка на страницу в текущем каталоге</a
+      </li>
+      <li><a href="index.html" class="link">РЎРѕРєСЂР°С‰РµРЅРЅР°СЏ СЃСЃС‹Р»РєР° РЅР° РІРЅСѓС‚СЂРµРЅРЅСЋСЋ СЃС‚СЂР°РЅС†Сѓ</a></li>
+      <li><a href="/" class="link">РЎРѕРєСЂР°С‰РµРЅРЅР°СЏ СЃСЃС‹Р»РєР° РЅР° РіР»Р°РІРЅСѓСЋ СЃС‚СЂР°РЅРёС†Сѓ</a></li>
+      <li><a href="#Р’РЈР—" class="link">РЎСЃС‹Р»РєР° РЅР° С„СЂР°РіРјРµРЅС‚ С‚РµРєСѓС‰РµР№ СЃС‚СЂР°РЅРёС†С‹</a></li>
+      <li><a href="http://www.site.ru/?t=k&h=e&b=q" class="link">РЎСЃС‹Р»РєР° СЃ С‚СЂРµРјСЏ РїР°СЂР°РјРµС‚СЂР°РјРё РІ URL</a></li>
+      <li><a href="http://www.site.ru/?id=7464957839" class="link">РЎСЃС‹Р»РєР° СЃ РїР°СЂР°РјРµС‚СЂРѕРј id РІ URL</a></li>
+      <li>
+        <a href="./index.html" class="link">РћС‚РЅРѕСЃРёС‚РµР»СЊРЅР°СЏ СЃСЃС‹Р»РєР° РЅР° СЃС‚СЂР°РЅРёС†Сѓ РІ С‚РµРєСѓС‰РµРј РєР°С‚Р°Р»РѕРіРµ</a
         >
       </li>
       <li>
-        <a href="/about">Относительная ссылка на страницу в каталоге about</a>
-    </li>
-    <li>
-      <a href="../index.html">Относительная ссылка на страницу в каталоге уровнем выше текущего</a
+        <a href="/about" class="link">РћС‚РЅРѕСЃРёС‚РµР»СЊРЅР°СЏ СЃСЃС‹Р»РєР° РЅР° СЃС‚СЂР°РЅРёС†Сѓ РІ РєР°С‚Р°Р»РѕРіРµ about</a>
+      </li>
+      <li>
+        <a href="../index.html" class="link">РћС‚РЅРѕСЃРёС‚РµР»СЊРЅР°СЏ СЃСЃС‹Р»РєР° РЅР° СЃС‚СЂР°РЅРёС†Сѓ РІ РєР°С‚Р°Р»РѕРіРµ СѓСЂРѕРІРЅРµРј РІС‹С€Рµ С‚РµРєСѓС‰РµРіРѕ</a
         >
       </li>
       <li>
-        <a href="../../index.html"
-          >Относительная ссылка на страницу в каталоге двумя уровнями выше</a
+        <a href="../../index.html" class="link"
+          >РћС‚РЅРѕСЃРёС‚РµР»СЊРЅР°СЏ СЃСЃС‹Р»РєР° РЅР° СЃС‚СЂР°РЅРёС†Сѓ РІ РєР°С‚Р°Р»РѕРіРµ РґРІСѓРјСЏ СѓСЂРѕРІРЅСЏРјРё РІС‹С€Рµ</a
         >
       </li>
       <li>
-        Это контекстная <a href="http://kubsu.ru/">ссылка</a> в тексте абзаца
-    </li>
-    <li>
-      <a href="http://drugoi.site.ru/index.html#idshnik">Ссылка на фрагмент страницы стороннего сайта</a
+        Р­С‚Рѕ РєРѕРЅС‚РµРєСЃС‚РЅР°СЏ <a href="http://kubsu.ru/" class="link">СЃСЃС‹Р»РєР°</a> РІ С‚РµРєСЃС‚Рµ Р°Р±Р·Р°С†Р°
+      </li>
+      <li>
+        <a href="http://drugoi.site.ru/index.html#idshnik" class="link">РЎСЃС‹Р»РєР° РЅР° С„СЂР°РіРјРµРЅС‚ СЃС‚СЂР°РЅРёС†С‹ СЃС‚РѕСЂРѕРЅРЅРµРіРѕ СЃР°Р№С‚Р°</a
         >
       </li>
       <li>
         <img
-          src="https://i.pinimg.com/736x/08/3c/df/083cdf46f5fc5cc44b41112cc2a9d75b.jpg"
+          src="https://openedu.kubsu.ru/pluginfile.php/1/core_admin/logocompact/300x300/1681820896/%D0%9A%D1%83%D0%B1%D0%93%D0%A32.png"
           width="200"
           height="200"
-          alt="kitten"
-          usemap="#kitten">
-        <map name="kitten">
-          <area shape="circle" coords="150,150,15" alt="circle" href="https://kubsu.ru/?ysclid=lnj147f28l349612809">
-          <area shape="rect" coords="0,0,100,100" alt="rect" href="https://kubsu.ru/ru/fktipm">
-        </map>
+          alt="KubSu"
+          usemap="#tree"
+        >
       </li>
-      <li><a href="">Ссылка с пустым href</a></li>
-    <li><a>Ссылка без href</a></li>
-    <li>
-      <a href="http://kubsu.ru/" rel="nofollow">Ссылка, по которой запрещен переход поисковикам</a
+      <li><a href="" class="link">РЎСЃС‹Р»РєР° СЃ РїСѓСЃС‚С‹Рј href</a></li>
+      <li><a>РЎСЃС‹Р»РєР° Р±РµР· href</a></li>
+      <li>
+        <a href="http://kubsu.ru/" rel="nofollow" class="link">РЎСЃС‹Р»РєР°, РїРѕ РєРѕС‚РѕСЂРѕР№ Р·Р°РїСЂРµС‰РµРЅ РїРµСЂРµС…РѕРґ РїРѕРёСЃРєРѕРІРёРєР°Рј</a
         >
       </li>
       <li>
-          <a href="http://kubsu.ru/" rel="noindex">Ссылка, запрещенная для индексации</a>
+        <!--noindex-->
+          <a href="http://kubsu.ru/" class="link"
+            >РЎСЃС‹Р»РєР°, Р·Р°РїСЂРµС‰РµРЅРЅР°СЏ РґР»СЏ РёРЅРґРµРєСЃР°С†РёРё</a
+          ><!--/noindex-->
       </li>
     </ul>
       <ol>
-        Нумерованный список ссылок
         <li>
-          <a href="http://kubsu.ru/" title="Заголовок 1">Первая ссылка</a>
-    </li>
-    <li>
-      <a href="http://kubsu.ru/" title="Заголовок 2">Вторая ссылка</a>
-    </li>
-    </ol>
-    <ul>
+          <a href="http://kubsu.ru/" title="Р—Р°РіРѕР»РѕРІРѕРє 1" class="link">РџРµСЂРІР°СЏ СЃСЃС‹Р»РєР°</a>
+      </li>
       <li>
-        <a href="ftp://user:password@primer.com/papka.txt">Ссылка на файл на сервере FTP с авторизацией</a
+        <a href="http://kubsu.ru/" title="Р—Р°РіРѕР»РѕРІРѕРє 2" class="link">Р’С‚РѕСЂР°СЏ СЃСЃС‹Р»РєР°</a>
+      </li>
+      </ol>
+      <ul>
+        <li>
+          <a href="ftp://user:password@primer.com/failik.txt" class="link">РЎСЃС‹Р»РєР° РЅР° С„Р°Р№Р» РЅР° СЃРµСЂРІРµСЂРµ FTP СЃ Р°РІС‚РѕСЂРёР·Р°С†РёРµР№</a
         >
       </li>
     </ul>
-    <form action="/" method="POST">
+    <map name="tree">
+      <area
+        shape="rect"
+        coords="0,0,100,100"
+        href="http://kubsu.ru/"
+        alt="Р›РѕРіРѕС‚РёРї РєСѓР±РіСѓ"
+      >
+      <area
+        shape="circle"
+        coords="120,100,40"
+        href="http://vk.com/"
+        alt="Р›РѕРіРѕС‚РёРї РєСѓР±РіСѓ"
+      >
+    </map>
+    </div>
+    <div class="content-container">
+        <div class="title">РўР°Р±Р»РёС†Р°</div>
+        <table>
+        <tr class="string1"><th>РљРѕР»РѕРЅРєР° 1</th><th>РљРѕР»РѕРЅРєР° 2</th><th>РљРѕР»РѕРЅРєР° 3</th><th>РљРѕР»РѕРЅРєР° 4</th></tr>
+        <tr class="string2"><td>РЇС‡РµР№РєР° 1</td><td>РЇС‡РµР№РєР° 2</td><td>РЇС‡РµР№РєР° 3</td><td>РЇС‡РµР№РєР° 4</td></tr>
+        <tr class="string1"><td colspan="2">РЇС‡РµР№РєР° 5 Рё РЇС‡РµР№РєР° 6</td><td>РЇС‡РµР№РєР° 7</td><td>РЇС‡РµР№РєР° 8</td></tr>
+        <tr class="string2"><td>РЇС‡РµР№РєР° 9</td><td>РЇС‡РµР№РєР° 10</td><td>РЇС‡РµР№РєР° 12</td><td>РЇС‡РµР№РєР° 13</td></tr>
+        <tr class="string1"><td>РЇС‡РµР№РєР° 14</td><td>РЇС‡РµР№РєР° 15</td><td>РЇС‡РµР№РєР° 16</td><td>РЇС‡РµР№РєР° 17</td></tr>
+        <tr class="string2"><td>РЇС‡РµР№РєР° 18</td><td colspan="3">РЇС‡РµР№РєР° 19 Рё РЇС‡РµР№РєР° 20 Рё РЇС‡РµР№РєР° 21</td></tr>
+        <tr class="string1"><td>РЇС‡РµР№РєР° 22</td><td>РЇС‡РµР№РєР° 23</td><td>РЇС‡РµР№РєР° 24</td><td>РЇС‡РµР№РєР° 25</td></tr>
+      </table>
+    </div>
+    <div class="content-container">
+        <div class="title">Р¤РѕСЂРјР°</div>
+        <form action="/" method="POST">
       <label>
-        Текстовое поле ФИО:
+        РўРµРєСЃС‚РѕРІРѕРµ РїРѕР»Рµ Р¤РРћ:
         <br>
-        <input name="field-name" placeholder="Введите ФИО">
+        <input name="field-name" placeholder="Р’РІРµРґРёС‚Рµ Р¤РРћ">
       </label>
       <br>
       <label>
-        Текстовое поле телефон:
-        <br>
+        РўРµРєСЃС‚РѕРІРѕРµ РїРѕР»Рµ С‚РµР»РµС„РѕРЅ:
         <br>
         <input name="field-tel" type="tel" value="+7 ">
       </label>
       <br>
       <label>
-        Текстовое поле email:
+        РўРµРєСЃС‚РѕРІРѕРµ РїРѕР»Рµ email:
         <br>
-        <input name="field-email" type="email" placeholder="Введите email">
+        <input name="field-email" type="email" placeholder="Р’РІРµРґРёС‚Рµ email">
       </label>
       <br>
       <label>
-        Дата рождения:
+        Р”Р°С‚Р° СЂРѕР¶РґРµРЅРёСЏ:
         <br>
         <input
           name="field-date"
@@ -117,62 +157,65 @@
         >
       </label>
       <br>
-      Укажите пол:
+      РЈРєР°Р¶РёС‚Рµ РїРѕР»:
       <br>
       <label>
         <input
           name="radio-group-1"
           type="radio"
           checked="checked"
-          value="Мужской"
+          value="РњСѓР¶СЃРєРѕР№"
         >
-        Мужской
+        РњСѓР¶СЃРєРѕР№
       </label>
       <label>
         <input
           name="radio-group-1"
           type="radio"
-          checked="checked"
-          value="Женский"
+          value="Р–РµРЅСЃРєРёР№"
         >
-        Женский
+        Р–РµРЅСЃРєРёР№
       </label>
       <br>
       <label>
-        Любимые языки прграммирования
+        Р›СЋР±РёРјС‹Рµ СЏР·С‹РєРё РїСЂРіСЂР°РјРјРёСЂРѕРІР°РЅРёСЏ
         <br>
         <select name="field-name-4[]" multiple="multiple">
-          <option value="Значение1">Pascal</option>
-          <option value="Значение2" selected="selected">C</option>
-          <option value="Значение3" selected="selected">C++</option>
-          <option value="Значение4" selected="selected">JavaScript</option>
-          <option value="Значение5" selected="selected">PHP</option>
-          <option value="Значение6" selected="selected">Python</option>
-          <option value="Значение7" selected="selected">Java</option>
-          <option value="Значение8" selected="selected">Haskel</option>
-          <option value="Значение9" selected="selected">Clojure</option>
-          <option value="Значение10" selected="selected">Prolog</option>
-          <option value="Значение11" selected="selected">Scala</option>
+          <option value="Р—РЅР°С‡РµРЅРёРµ1">Pascal</option>
+          <option value="Р—РЅР°С‡РµРЅРёРµ2" selected="selected">C</option>
+          <option value="Р—РЅР°С‡РµРЅРёРµ3" selected="selected">C++</option>
+          <option value="Р—РЅР°С‡РµРЅРёРµ4" selected="selected">JavaScript</option>
+          <option value="Р—РЅР°С‡РµРЅРёРµ5" selected="selected">PHP</option>
+          <option value="Р—РЅР°С‡РµРЅРёРµ6" selected="selected">Python</option>
+          <option value="Р—РЅР°С‡РµРЅРёРµ7" selected="selected">Java</option>
+          <option value="Р—РЅР°С‡РµРЅРёРµ8" selected="selected">Haskel</option>
+          <option value="Р—РЅР°С‡РµРЅРёРµ9" selected="selected">Clojure</option>
+          <option value="Р—РЅР°С‡РµРЅРёРµ10" selected="selected">Prolog</option>
+          <option value="Р—РЅР°С‡РµРЅРёРµ11" selected="selected">Scala</option>
         </select>
       </label>
       <br>
       <label>
-        Биография
+        Р‘РёРѕРіСЂР°С„РёСЏ
         <br>
         <textarea
           name="field-name-biography"
           style="width: 175px; height: 39px"
         >
-            </textarea
+            РЇ СЂРѕРґРёР»СЃСЏ</textarea
         >
       </label>
       <br>
       <label>
         <input type="checkbox" checked="checked" name="check-1">
-        С контрактом ознакомлен (-а)
+        РЎ РєРѕРЅС‚СЂР°РєС‚РѕРј РѕР·РЅР°РєРѕРјР»РµРЅ (-Р°)
       </label>
       <br>
-      <input type="submit" value="Сохранить">
+      <input type="submit" value="РЎРѕС…СЂР°РЅРёС‚СЊ">
     </form>
-  </body>
+    </div>
+    <footer>
+        <div class="footer-text">(c)РљР°Р±Р°РєРѕРІ РЇСЂРѕСЃР»Р°РІ</div>
+    </footer>
+    </body>
 </html>
