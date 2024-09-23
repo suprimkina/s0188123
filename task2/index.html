@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Task 1 Anna Suprun 21/2</title>
+</head>
+<body>
+  <ul>
+    <li>
+      <a href="http://kubsu.ru/" id="КУБГУ">Абсолютная гиперссылка на главную страницу сайта kubsu.ru</a
+        >
+      </li>
+      <li>
+        <a href="https://www.kubsu.ru/index.php"
+          >Абсолютная на главную сайта kubsu.ru в протоколе https</a
+        >
+      </li>
+      <li>
+        <a href="https://en.wikipedia.org/wiki/Kitten"
+          ><img
+            src="https://i.pinimg.com/736x/08/3c/df/083cdf46f5fc5cc44b41112cc2a9d75b.jpg"
+            height="10%" width="10%"
+            alt="kitten"
+        ></a>
+    </li>
+    <li><a href="index.html">Сокращенная ссылка на внутреннюю странцу</a></li>
+    <li><a href="/">Сокращенная ссылка на главную страницу</a></li>
+    <li><a href="#ВУЗ">Ссылка на фрагмент текущей страницы</a></li>
+    <li><a href="https://mysite.com/?p1=a1&p2=a2&p3=a3">Ссылка с тремя параметрами в URL</a></li>
+    <li><a href="http://www.site.ru/?id=123456789">Ссылка с параметром id в URL</a></li>
+    <li>
+      <a href="./index.html">Относительная ссылка на страницу в текущем каталоге</a
+        >
+      </li>
+      <li>
+        <a href="/about">Относительная ссылка на страницу в каталоге about</a>
+    </li>
+    <li>
+      <a href="../index.html">Относительная ссылка на страницу в каталоге уровнем выше текущего</a
+        >
+      </li>
+      <li>
+        <a href="../../index.html"
+          >Относительная ссылка на страницу в каталоге двумя уровнями выше</a
+        >
+      </li>
+      <li>
+        Это контекстная <a href="http://kubsu.ru/">ссылка</a> в тексте абзаца
+    </li>
+    <li>
+      <a href="http://drugoi.site.ru/index.html#idshnik">Ссылка на фрагмент страницы стороннего сайта</a
+        >
+      </li>
+      <li>
+        <img
+          src="https://i.pinimg.com/736x/08/3c/df/083cdf46f5fc5cc44b41112cc2a9d75b.jpg"
+          width="200"
+          height="200"
+          alt="kitten"
+          usemap="#kitten">
+        <map name="kitten">
+          <area shape="circle" coords="150,150,15" alt="circle" href="https://kubsu.ru/?ysclid=lnj147f28l349612809">
+          <area shape="rect" coords="0,0,100,100" alt="rect" href="https://kubsu.ru/ru/fktipm">
+        </map>
+      </li>
+      <li><a href="">Ссылка с пустым href</a></li>
+    <li><a>Ссылка без href</a></li>
+    <li>
+      <a href="http://kubsu.ru/" rel="nofollow">Ссылка, по которой запрещен переход поисковикам</a
+        >
+      </li>
+      <li>
+          <a href="http://kubsu.ru/" rel="noindex">Ссылка, запрещенная для индексации</a>
+      </li>
+    </ul>
+      <ol>
+        Нумерованный список ссылок
+        <li>
+          <a href="http://kubsu.ru/" title="Заголовок 1">Первая ссылка</a>
+    </li>
+    <li>
+      <a href="http://kubsu.ru/" title="Заголовок 2">Вторая ссылка</a>
+    </li>
+    </ol>
+    <ul>
+      <li>
+        <a href="ftp://user:password@primer.com/papka.txt">Ссылка на файл на сервере FTP с авторизацией</a
+        >
+      </li>
+    </ul>
+    <form action="/" method="POST">
+      <label>
+        Текстовое поле ФИО:
+        <br>
+        <input name="field-name" placeholder="Введите ФИО">
+      </label>
+      <br>
+      <label>
+        Текстовое поле телефон:
+        <br>
+        <br>
+        <input name="field-tel" type="tel" value="+7 ">
+      </label>
+      <br>
+      <label>
+        Текстовое поле email:
+        <br>
+        <input name="field-email" type="email" placeholder="Введите email">
+      </label>
+      <br>
+      <label>
+        Дата рождения:
+        <br>
+        <input
+          name="field-date"
+          type="date"
+        >
+      </label>
+      <br>
+      Укажите пол:
+      <br>
+      <label>
+        <input
+          name="radio-group-1"
+          type="radio"
+          checked="checked"
+          value="Мужской"
+        >
+        Мужской
+      </label>
+      <label>
+        <input
+          name="radio-group-1"
+          type="radio"
+          checked="checked"
+          value="Женский"
+        >
+        Женский
+      </label>
+      <br>
+      <label>
+        Любимые языки прграммирования
+        <br>
+        <select name="field-name-4[]" multiple="multiple">
+          <option value="Значение1">Pascal</option>
+          <option value="Значение2" selected="selected">C</option>
+          <option value="Значение3" selected="selected">C++</option>
+          <option value="Значение4" selected="selected">JavaScript</option>
+          <option value="Значение5" selected="selected">PHP</option>
+          <option value="Значение6" selected="selected">Python</option>
+          <option value="Значение7" selected="selected">Java</option>
+          <option value="Значение8" selected="selected">Haskel</option>
+          <option value="Значение9" selected="selected">Clojure</option>
+          <option value="Значение10" selected="selected">Prolog</option>
+          <option value="Значение11" selected="selected">Scala</option>
+        </select>
+      </label>
+      <br>
+      <label>
+        Биография
+        <br>
+        <textarea
+          name="field-name-biography"
+          style="width: 175px; height: 39px"
+        >
+            </textarea
+        >
+      </label>
+      <br>
+      <label>
+        <input type="checkbox" checked="checked" name="check-1">
+        С контрактом ознакомлен (-а)
+      </label>
+      <br>
+      <input type="submit" value="Сохранить">
+    </form>
+  </body>
+</html>
