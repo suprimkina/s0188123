@@ -1,14 +1,22 @@
+.body {
+    background: right url("фон.jpg");
+    background-repeat: repeat;
+    background-position: 10% 20%;
+    background-size: 100% auto;
+}
+
+
 header
 {
     width: 100%;
-    background-color: #247BA0;
+    background-color: #5A7504;
     height: 285px;
     margin-bottom: 50px;
 }
 
 #nav
 {
-    background-color: #fff;
+    background-color: #ffffff;
     width: 690px;
     height: 50px;
     float: right;
@@ -19,7 +27,7 @@ header
 .nav-button
 {
     display: inline-block;
-    background-color: #247BA0;
+    background-color: #5A7504;
     width: 220px;
     height: 40px;
     border-radius: 15px;
@@ -60,7 +68,8 @@ header
     margin-bottom: 50px;
     max-width: 880px;
     color: #fff;
-    background-color: #247BA0;
+    background-color: #5A7504;
+    font-size: 30px;
 }
 .link
 {
@@ -82,24 +91,25 @@ table
     width: 700px;
     height: 500px;
     margin-top: 20px;
-    border-color: #69BADD;
+    border-color: #000000;
+    border: 5px;
+    font-size: 20px;
 }
 
 .string1
 {
-    font-size: small;
     text-align: center;
     font-family: Arial;
-    background-color: #69BADD;
+    background-color: #e4fa9f;
+    color: #5A7504;
 }
 
 .string2
 {
-    font-size: small;
     text-align: center;
     font-family: Arial;
     background-color: #fff;
-    color: #69BADD;
+    color: #5A7504;
 }
 
 footer
@@ -107,9 +117,9 @@ footer
     font-size: 30px;
     padding-top: 40px;
     width: 100%;
-    background-color: #247BA0;
+    background-color: #5A7504;
     height: 60px;
     color: #fff;
-    text-align: center;
     font-family: Arial;
+    padding-left: 20px;
 }
