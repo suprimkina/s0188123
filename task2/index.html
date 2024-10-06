@@ -7,115 +7,25 @@
   <title>Задание 2</title>
 </head>
 
-<body>
+<body class="body">
   <header>
     <nav id="nav">
-      <a href="https://t.me/suprimkina" class="nav-button">Telegram</a>
-      <a href="https://www.instagram.com/suprimkina/" class="nav-button">Inst</a>
-      <a href="https://vk.com/suprimkina" class="nav-button">VK</a>
+      <a href="#links" class="nav-button">Ссылки</a>
+      <a href="#table" class="nav-button">Таблица</a>
+      <a href="#form" class="nav-button">Форма</a>
     </nav>
-    <img src="https://github.com/kabakov52/kabakov52.github.io/blob/main/task2/Perself.png?raw=true" alt="Perself logo" class="logo">
-    <div id="top">Perself Studio</div>
+    <img src="логотип.jpg" alt="logo" class="logo" height = 200 width=200>
+    <div id="top">Задание 2</div>
   </header>
-  <div class="content-container">
-    <div class="title">Список ссылок</div>
-    <ul>
-      <li>
-        <a href="http://kubsu.ru/" id="ВУЗ" class="link">Абсолютная гиперссылка на главную страницу сайта kubsu.ru</a
-        >
-      </li>
-      <li>
-        <a href="https://kubsu.ru/" class="link"
-          >Абсолютная на главную сайта kubsu.ru в протоколе https</a
-        >
-      </li>
-      <li>
-        <a href="http://kubsu.ru/" 
-          ><img
-            src="https://openedu.kubsu.ru/pluginfile.php/1/core_admin/logocompact/300x300/1681820896/%D0%9A%D1%83%D0%B1%D0%93%D0%A32.png"
-            alt="Логотип КубГу"
-        ></a>
-      </li>
-      <li><a href="index.html" class="link">Сокращенная ссылка на внутреннюю странцу</a></li>
-      <li><a href="/" class="link">Сокращенная ссылка на главную страницу</a></li>
-      <li><a href="#ВУЗ" class="link">Ссылка на фрагмент текущей страницы</a></li>
-      <li><a href="http://www.site.ru/?t=k&h=e&b=q" class="link">Ссылка с тремя параметрами в URL</a></li>
-      <li><a href="http://www.site.ru/?id=7464957839" class="link">Ссылка с параметром id в URL</a></li>
-      <li>
-        <a href="./index.html" class="link">Относительная ссылка на страницу в текущем каталоге</a
-        >
-      </li>
-      <li>
-        <a href="/about" class="link">Относительная ссылка на страницу в каталоге about</a>
-      </li>
-      <li>
-        <a href="../index.html" class="link">Относительная ссылка на страницу в каталоге уровнем выше текущего</a
-        >
-      </li>
-      <li>
-        <a href="../../index.html" class="link"
-          >Относительная ссылка на страницу в каталоге двумя уровнями выше</a
-        >
-      </li>
-      <li>
-        Это контекстная <a href="http://kubsu.ru/" class="link">ссылка</a> в тексте абзаца
-      </li>
-      <li>
-        <a href="http://drugoi.site.ru/index.html#idshnik" class="link">Ссылка на фрагмент страницы стороннего сайта</a
-        >
-      </li>
-      <li>
-        <img
-          src="https://openedu.kubsu.ru/pluginfile.php/1/core_admin/logocompact/300x300/1681820896/%D0%9A%D1%83%D0%B1%D0%93%D0%A32.png"
-          width="200"
-          height="200"
-          alt="KubSu"
-          usemap="#tree"
-        >
-      </li>
-      <li><a href="" class="link">Ссылка с пустым href</a></li>
-      <li><a>Ссылка без href</a></li>
-      <li>
-        <a href="http://kubsu.ru/" rel="nofollow" class="link">Ссылка, по которой запрещен переход поисковикам</a
-        >
-      </li>
-      <li>
-        <!--noindex-->
-          <a href="http://kubsu.ru/" class="link"
-            >Ссылка, запрещенная для индексации</a
-          ><!--/noindex-->
-      </li>
-    </ul>
-      <ol>
-        <li>
-          <a href="http://kubsu.ru/" title="Заголовок 1" class="link">Первая ссылка</a>
-      </li>
-      <li>
-        <a href="http://kubsu.ru/" title="Заголовок 2" class="link">Вторая ссылка</a>
-      </li>
-      </ol>
-      <ul>
-        <li>
-          <a href="ftp://user:password@primer.com/failik.txt" class="link">Ссылка на файл на сервере FTP с авторизацией</a
-        >
-      </li>
-    </ul>
-    <map name="tree">
-      <area
-        shape="rect"
-        coords="0,0,100,100"
-        href="http://kubsu.ru/"
-        alt="Логотип кубгу"
-      >
-      <area
-        shape="circle"
-        coords="120,100,40"
-        href="http://vk.com/"
-        alt="Логотип кубгу"
-      >
-    </map>
+  <div class="content-container" id = "links">
+    <div class="title">Ссылки</div>
+      <p><a href = "https://ru.wikipedia.org/wiki/Собака" style="color: rgb(255, 255, 255)" title = "собака"> Собаки </a></p>
+      <p><a href = "https://ru.wikipedia.org/wiki/Малые_бельгийские_собаки" style="color: rgb(255, 255, 255)" title = "гриффончик"> Гриффон </a></p>
+      <p><a href = "https://i.pinimg.com/736x/9f/9b/cd/9f9bcd0cf29fac9476631aa71a2e1f64.jpg" style="color: rgb(255, 255, 255)" title = "гриффончик фото" > Гриффон в носочках </a></p>
+      <p><a href = "https://www.purinaone.ru/dog/articles/breeds/brusselski-griffon" style="color: rgb(255, 255, 255)" title = "уход за гриффончиком"> Уход </a></p>
+      <p><a href = "https://i.pinimg.com/originals/7e/17/f5/7e17f56871afd678bde3e87b100fde67.jpg" style="color: rgb(255, 255, 255)" title = "гриффончик фото"> Гриффон в костюме </a></p>
     </div>
-    <div class="content-container">
+    <div class="content-container" id = "table">
         <div class="title">Таблица</div>
         <table>
         <tr class="string1"><th>Колонка 1</th><th>Колонка 2</th><th>Колонка 3</th><th>Колонка 4</th></tr>
@@ -127,7 +37,7 @@
         <tr class="string1"><td>Ячейка 22</td><td>Ячейка 23</td><td>Ячейка 24</td><td>Ячейка 25</td></tr>
       </table>
     </div>
-    <div class="content-container">
+    <div class="content-container" id = "form">
         <div class="title">Форма</div>
         <form action="/" method="POST">
       <label>
@@ -202,7 +112,7 @@
           name="field-name-biography"
           style="width: 175px; height: 39px"
         >
-            Я родился</textarea
+          Введите текст</textarea
         >
       </label>
       <br>
