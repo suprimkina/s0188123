@@ -186,6 +186,7 @@ main{
     .content-container{
         padding: 50px;
         font-size: 30px;
+        max-width: 960px;
     }
 
     #nav{
