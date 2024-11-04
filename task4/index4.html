@@ -4,41 +4,30 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="bootstrap-grid.min.css">
+  <link rel="stylesheet" href="style.css">
   <title>Задание 4</title>
 </head>
 
-<body class="body text-black">
-  <header class ="header mt-2 mb-3 p-3">
-    
-    <div id="top">
-      <img src="логотип.jpg" alt="logo" class="logo-pic mt-3 ml-3" >
-
-
-    <h1> Задание 4 </h1>
-  </div>
+<body class="body m-0 text-black">
+  <header class ="d-flex flex-column flex-sm-row justify-content-between mb-5">
+    <div class="d-flex align-items-center justify-content-between justify-content-sm-start" id="top">
+      <img src="логотип.jpg" alt="logo" class="logo-pic mt-3 mb-4" >
+      <h1> Задание 4 </h1>
+    </div>
     <nav id="nav">
-      <a href="#links" class="nav-button m-1">Ссылки</a>
-      <a href="#table" class="nav-button m-1">Таблица</a>
-      <a href="#form" class="nav-button m-1">Форма</a>
+      <ul class="list__reset m-0 p-0 d-flex flex-column flex-sm-row" style="gap: 10px;">
+        <li><a href="#links" class="d-inline-block nav-button pt-2">Ссылки</a></li>
+        <li><a href="#table" class="d-inline-block nav-button pt-2">Таблица</a></li>
+        <li><a href="#form" class="d-inline-block nav-button pt-2">Форма</a></li>
+      </ul>
     </nav>
   </header>
-  <main class ="main d-flex flex-column fs-1">
-  <div class="content-container pl-3 pt-3 pb-3 pr-3" id = "links">
-    <div class="title">Ссылки</div>
-      <p><a href = "https://ru.wikipedia.org/wiki/Собака" style="color: rgb(255, 255, 255)" title = "собака"> Собаки </a></p>
-      <p><a href = "https://ru.wikipedia.org/wiki/Малые_бельгийские_собаки" style="color: rgb(255, 255, 255)" title = "гриффончик"> Гриффон </a></p>
-      <p><a href = "https://i.pinimg.com/736x/9f/9b/cd/9f9bcd0cf29fac9476631aa71a2e1f64.jpg" style="color: rgb(255, 255, 255)" title = "гриффончик фото" > Гриффон в носочках </a></p>
-      <p><a href = "https://www.purinaone.ru/dog/articles/breeds/brusselski-griffon" style="color: rgb(255, 255, 255)" title = "уход за гриффончиком"> Уход </a></p>
-      <p><a href = "https://i.pinimg.com/originals/7e/17/f5/7e17f56871afd678bde3e87b100fde67.jpg" style="color: rgb(255, 255, 255)" title = "гриффончик фото"> Гриффон в костюме </a></p>
-    </div>
-    <div class="content-container pl-5" id = "table">
-        <div class="title">Таблица</div>
-        <table>
+
+  <main class ="main d-flex flex-column fs-1 m-auto" style="max-width: 960px;">
+    <div class="content-container p-4 pl-5 mb-5" id = "table">
+      <div class="title">Таблица</div>
+      <table>
         <tr class="string1"><th>Колонка 1</th><th>Колонка 2</th><th>Колонка 3</th><th>Колонка 4</th></tr>
         <tr class="string2"><td>Ячейка 1</td><td>Ячейка 2</td><td>Ячейка 3</td><td rowspan = "2">Ячейка 4 и Ячейка 8</td></tr>
         <tr class="string1"><td colspan="2">Ячейка 5 и Ячейка 6</td><td>Ячейка 7</td></tr>
@@ -48,98 +37,103 @@
         <tr class="string1"><td>Ячейка 22</td><td>Ячейка 23</td><td>Ячейка 24</td><td>Ячейка 25</td></tr>
       </table>
     </div>
-    <div class="content-container pl-5 pt-3 pb-5 pr-3" id = "form">
-        <div class="title">Форма</div>
-        <form action="/" method="POST">
-      <label>
-        Текстовое поле ФИО:
-        <br>
-        <input name="field-name" placeholder="Введите ФИО">
-      </label>
-      <br>
-      <label>
-        Текстовое поле телефон:
-        <br>
-        <input name="field-tel" type="tel" value="+7 ">
-      </label>
-      <br>
-      <label>
-        Текстовое поле email:
-        <br>
-        <input name="field-email" type="email" placeholder="Введите email">
-      </label>
-      <br>
-      <label>
-        Дата рождения:
-        <br>
-        <input
-          name="field-date"
-          type="date"
-        >
-      </label>
-      <br>
-      Укажите пол:
-      <br>
-      <label>
-        <input
-          name="radio-group-1"
-          type="radio"
-          checked="checked"
-          value="Мужской"
-        >
-        Мужской
-      </label>
-      <label>
-        <input
-          name="radio-group-1"
-          type="radio"
-          value="Женский"
-        >
-        Женский
-      </label>
-      <br>
-      <label>
-        Любимые языки прграммирования
-        <br>
-        <select name="field-name-4[]" multiple="multiple">
-          <option value="Значение1">Pascal</option>
-          <option value="Значение2" selected="selected">C</option>
-          <option value="Значение3" selected="selected">C++</option>
-          <option value="Значение4" selected="selected">JavaScript</option>
-          <option value="Значение5" selected="selected">PHP</option>
-          <option value="Значение6" selected="selected">Python</option>
-          <option value="Значение7" selected="selected">Java</option>
-          <option value="Значение8" selected="selected">Haskel</option>
-          <option value="Значение9" selected="selected">Clojure</option>
-          <option value="Значение10" selected="selected">Prolog</option>
-          <option value="Значение11" selected="selected">Scala</option>
-        </select>
-      </label>
-      <br>
-      <label>
-        Биография
-        <br>
-        <textarea
-          name="field-name-biography"
-          style="width: 175px; height: 39px"
-        >
-          Введите текст</textarea
-        >
-      </label>
-      <br>
-      <label>
-        <input type="checkbox" checked="checked" name="check-1">
-        С контрактом ознакомлен (-а)
-      </label>
-      <br>
-      <input type="submit" value="Сохранить">
-    </form>
+
+    <div class="content-container p-4 order-sm-first pl-3 pt-3 pb-3 pr-3 mb-5" id = "links">
+      <div class="title">Ссылки</div>
+        <p><a href = "https://ru.wikipedia.org/wiki/Собака" style="color: rgb(255, 255, 255)" title = "собака"> Собаки </a></p>
+        <p><a href = "https://ru.wikipedia.org/wiki/Малые_бельгийские_собаки" style="color: rgb(255, 255, 255)" title = "гриффончик"> Гриффон </a></p>
+        <p><a href = "https://i.pinimg.com/736x/9f/9b/cd/9f9bcd0cf29fac9476631aa71a2e1f64.jpg" style="color: rgb(255, 255, 255)" title = "гриффончик фото" > Гриффон в носочках </a></p>
+        <p><a href = "https://www.purinaone.ru/dog/articles/breeds/brusselski-griffon" style="color: rgb(255, 255, 255)" title = "уход за гриффончиком"> Уход </a></p>
+        <p><a href = "https://i.pinimg.com/originals/7e/17/f5/7e17f56871afd678bde3e87b100fde67.jpg" style="color: rgb(255, 255, 255)" title = "гриффончик фото"> Гриффон в костюме </a></p>
     </div>
-    </main>
-    <div class="footer-text d-flex flex-column pt-2 mt-5">
-    <footer >
-          <p>&copy;Супрун Анна</p>
-    </footer>
+
+    <div class="content-container p-4 pl-5 pt-3 pb-5 pr-3 mb-5" id = "form">
+      <div class="title">Форма</div>
+      <form action="/" method="POST">
+        <label>
+          Текстовое поле ФИО:
+          <br>
+          <input class="mb-3" name="field-name" placeholder="Введите ФИО">
+        </label>
+        <br>
+        <label>
+          Текстовое поле телефон:
+          <br>
+          <input class="mb-3" name="field-tel" type="tel" value="+7 ">
+        </label>
+        <br>
+        <label>
+          Текстовое поле email:
+          <br>
+          <input class="mb-3" name="field-email" type="email" placeholder="Введите email">
+        </label>
+        <br>
+        <label>
+          Дата рождения:
+          <br>
+          <input class="mb-3" name="field-date" type="date">
+        </label>
+        <br>
+        Укажите пол:
+        <br>
+        <label>
+          <input class="mb-3"
+            name="radio-group-1"
+            type="radio"
+            checked="checked"
+            value="Мужской"
+          >
+          Мужской
+        </label>
+        <label>
+          <input class="mb-3"
+            name="radio-group-1"
+            type="radio"
+            value="Женский"
+          >
+          Женский
+        </label>
+        <br>
+        <label>
+          Любимые языки прграммирования
+          <br>
+          <select class="mb-3" name="field-name-4[]" multiple="multiple">
+            <option value="Значение1">Pascal</option>
+            <option value="Значение2" selected="selected">C</option>
+            <option value="Значение3" selected="selected">C++</option>
+            <option value="Значение4" selected="selected">JavaScript</option>
+            <option value="Значение5" selected="selected">PHP</option>
+            <option value="Значение6" selected="selected">Python</option>
+            <option value="Значение7" selected="selected">Java</option>
+            <option value="Значение8" selected="selected">Haskel</option>
+            <option value="Значение9" selected="selected">Clojure</option>
+            <option value="Значение10" selected="selected">Prolog</option>
+            <option value="Значение11" selected="selected">Scala</option>
+          </select>
+        </label>
+        <br>
+        <label>
+          Биография
+          <br>
+          <textarea class="mb-3"
+            name="field-name-biography"
+            style="width: 300px; min-height: 100px;"
+          >
+            Введите текст</textarea
+          >
+        </label>
+        <br>
+        <label>
+          <input type="checkbox" checked="checked" name="check-1">
+          С контрактом ознакомлен (-а)
+        </label>
+        <br>
+        <input type="submit" value="Сохранить">
+      </form>
     </div>
-    </body>
+  </main>
+  <footer class="py-4">
+    <div class="footer-text d-flex justify-content-start"><p class="m-0">&copy;Супрун Анна</p></div>
+  </footer>
+</body>
 </html>
