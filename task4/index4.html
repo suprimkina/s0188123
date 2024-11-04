@@ -4,28 +4,31 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
   <link rel="stylesheet" type="text/css" href="style.css">
   <title>Задание 4</title>
 </head>
 
-<body class="body">
-  <header>
+<body class="body text-black">
+  <header class ="header d-flex justify-content-between flex-column flex-sm-row bg-light mt-2 mb-3 p-3">
     
     <div id="top">
-      <img src="логотип.jpg" alt="logo" class="logo" >
+      <img src="логотип.jpg" alt="logo" class="logo-pic mt-3 ml-3" >
 
 
     <h1> Задание 4 </h1>
   </div>
     <nav id="nav">
-      <a href="#links" class="nav-button">Ссылки</a>
-      <a href="#table" class="nav-button">Таблица</a>
-      <a href="#form" class="nav-button">Форма</a>
+      <a href="#links" class="nav-button m-1">Ссылки</a>
+      <a href="#table" class="nav-button m-1">Таблица</a>
+      <a href="#form" class="nav-button m-1">Форма</a>
     </nav>
   </header>
-  <main>
-  <div class="content-container" id = "links">
+  <main class ="main d-flex flex-column fs-1">
+  <div class="content-container pl-3 pt-3 pb-3 pr-3" id = "links">
     <div class="title">Ссылки</div>
       <p><a href = "https://ru.wikipedia.org/wiki/Собака" style="color: rgb(255, 255, 255)" title = "собака"> Собаки </a></p>
       <p><a href = "https://ru.wikipedia.org/wiki/Малые_бельгийские_собаки" style="color: rgb(255, 255, 255)" title = "гриффончик"> Гриффон </a></p>
@@ -33,7 +36,7 @@
       <p><a href = "https://www.purinaone.ru/dog/articles/breeds/brusselski-griffon" style="color: rgb(255, 255, 255)" title = "уход за гриффончиком"> Уход </a></p>
       <p><a href = "https://i.pinimg.com/originals/7e/17/f5/7e17f56871afd678bde3e87b100fde67.jpg" style="color: rgb(255, 255, 255)" title = "гриффончик фото"> Гриффон в костюме </a></p>
     </div>
-    <div class="content-container" id = "table">
+    <div class="content-container pl-5" id = "table">
         <div class="title">Таблица</div>
         <table>
         <tr class="string1"><th>Колонка 1</th><th>Колонка 2</th><th>Колонка 3</th><th>Колонка 4</th></tr>
@@ -45,7 +48,7 @@
         <tr class="string1"><td>Ячейка 22</td><td>Ячейка 23</td><td>Ячейка 24</td><td>Ячейка 25</td></tr>
       </table>
     </div>
-    <div class="content-container" id = "form">
+    <div class="content-container pl-5 pt-3 pb-5 pr-3" id = "form">
         <div class="title">Форма</div>
         <form action="/" method="POST">
       <label>
@@ -133,7 +136,7 @@
     </form>
     </div>
     </main>
-    <div class="footer-text">
+    <div class="footer-text d-flex flex-column pt-2 mt-5">
     <footer >
           <p>&copy;Супрун Анна</p>
     </footer>
