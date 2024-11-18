@@ -1,1 +1,34 @@
-
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script defer src="script.js"></script> 
+    <title>Задание 5</title>
+</head>
+<body>
+    <header>
+        <div class="logo_title">
+            <img src="https://i.pinimg.com/originals/47/d7/a6/47d7a6f83632c86e1bec78fbce9ac2a3.png" alt="Store logo" class="logo-pic">
+            <h1 class="title">Магазин "Возле дома"</h1>
+        </div>
+    </header>
+    <div class = "main">
+            <h1>Рассчитайте стоимость</h1>
+            <label for = "product">Выберете товар</label>
+            <select id = "product" name = "product">
+                <option value = "50.50"> хлеб 50.50 руб.</option>
+                <option value = "170.36"> масло 170.36 руб.</option>
+                <option value = "98.20"> молоко 98.20 руб. </option>
+                <option value = "120.11"> макароны 120.11 руб.</option>
+            </select>
+            <label for = "number">Введите количество:</label>
+            <input type = "number" id="number" min="1" required>
+            <input type = "button" class = "button" onclick = "price()" value = "Рассчитать стоимость">
+            <h1>Стоимость:</h1>
+            <div id = "stoimost"></div>
+        </div>
+    <footer>
+        <h1>(c)Супрун Анна<h1>
+    </footer>
+</body>
