@@ -1,3 +1,5 @@
+window.addEventListener('DOMContentLoaded', function (event) {
+  console.log("DOM fully loaded and parsed"); });
 function price()
 {
     let product = document.getElementById("product").value;
