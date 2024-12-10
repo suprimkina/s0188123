@@ -2,26 +2,27 @@ function calculateTotalPrice() {
     let quantity = parseInt(document.getElementById("quantity").value);
     let selectedService = document.querySelector('input[name="service"]:checked').value;
     let totalPrice = 0;
-    if (quantity>-1){
-    if (selectedService === "service1") {
-        totalPrice = quantity * 5000;
-    } else if (selectedService === "service2") {
-        let selectedOption = document.getElementById("option").value;
-        if (selectedOption === "option1") {
-            totalPrice = quantity * 6000;
-        } else if (selectedOption === "option2") {
-            totalPrice = quantity * 2000;
-        }
-    } else if (selectedService === "service3") {
-        let propertyCheckbox = document.getElementById("property");
-        if (propertyCheckbox.checked) {
-            totalPrice = quantity * 8000;
-        } else {
-            totalPrice = quantity*3000;
-        }
+    if (quantity>-1)
+    {
+        if (selectedService === "service1") {
+            totalPrice = quantity * 5000;
+        } else if (selectedService === "service2") {
+            let selectedOption = document.getElementById("option").value;
+            if (selectedOption === "option1") {
+                totalPrice = quantity * 6000;
+            } else if (selectedOption === "option2") {
+                totalPrice = quantity * 2000;
+            }
+        } else if (selectedService === "service3") {
+            let propertyCheckbox = document.getElementById("property");
+            if (propertyCheckbox.checked) {
+                totalPrice = quantity * 8000;
+            } else {
+                totalPrice = quantity*3000;
+            }
     }
 
-    document.getElementById("totalPrice").textContent = "Итоговая стоимость: " + totalPrice + " руб.";
+        document.getElementById("totalPrice").textContent = "Итоговая стоимость: " + totalPrice + " руб.";
     }
     else
         document.getElementById("totalPrice").textContent = "Невозможен рассчет товара ";
